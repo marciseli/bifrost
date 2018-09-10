@@ -71,3 +71,4 @@ class Adapter(ABC):
     @abstractmethod
     def add_transaction_to_database(transaction_hash):
         raise NotImplementedError
+

@@ -60,3 +60,4 @@ class MCBTCAdapter(Adapter):
     def send_raw_transaction(cls, transaction_hex):
         transaction_hash = cls.client.sendrawtransaction(transaction_hex)
         return transaction_hash
+

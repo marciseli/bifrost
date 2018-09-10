@@ -54,3 +54,4 @@ class MCAdapter(MCBTCAdapter):
     @staticmethod
     def add_transaction_to_database(transaction_hash):
         database.add_transaction(transaction_hash, Blockchain.MULTICHAIN)
+

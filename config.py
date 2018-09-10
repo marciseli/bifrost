@@ -50,3 +50,4 @@ TRANSACTIONS = (
         blockchain=Blockchain.BITCOIN
     )
 )
+

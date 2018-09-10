@@ -262,3 +262,4 @@ To stop the blockchain:
 ```console
 $ bitcoin-cli stop
 ```
+

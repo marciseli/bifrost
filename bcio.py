@@ -22,3 +22,4 @@ def retrieve(transaction_hash):
     adapter = Adapter[blockchain]
     text = adapter.retrieve(transaction_hash)
     return text
+
