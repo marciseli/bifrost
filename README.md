@@ -2,6 +2,8 @@
 
 A project towards blockchain interoperability.
 
+Communcations System Group (CSG) at the Institut für Informatik  (IFI) from the University of Zurich (UZH)
+
 ## Dependencies
 
 This project is built with:
