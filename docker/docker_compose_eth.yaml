@@ -1,0 +1,8 @@
+version: "3"
+services:
+    ganache-cli:
+        ports:
+            - '8545:8545'
+        image: 'trufflesuite/ganache-cli:latest'
+        #private key of account to create and balance in wei
+        command: --account="0xec7a5eb646075cc16dd842381489614a49eda87e1f600d8780bbb3012288a98f,100000000000000000000" 
