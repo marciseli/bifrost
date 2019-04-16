@@ -79,8 +79,7 @@ def save_to_plot():
 	median_labels = [str(np.around(s).astype(int)) for s in medians]
 	pos = range(len(medians))
 	for tick, label in zip(pos, ax.get_xticklabels()):
-		ax.text(pos[tick]+1.3, medians[tick]-0.1, f"{median_labels[tick]} ms", va='bottom',
-                    horizontalalignment='left', verticalalignment='center', size='x-small', color='black', weight='semibold')
+		ax.text(pos[tick]+1.3, medians[tick]-0.1, f"{median_labels[tick]} ms", va='bottom', horizontalalignment='left', verticalalignment='center', size='medium', color='black', weight='semibold')
 	# Set labels etc.
 	ax.set_xticklabels(['BITCOIN', 'ETHEREUM', 'MULTICHAIN', 'STELLAR', 'EOS', 'IOTA', 'HYPERLEDGER', 'POSTGRES'])
 	ax.set_ylabel('Average time per transaction using 1000 samples (in seconds)')
