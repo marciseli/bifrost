@@ -59,6 +59,7 @@ def save_to_plot():
 	# combine these different collections into a list
 	data_to_plot = [BITCOIN_data, ETHEREUM_data, MULTICHAIN_data, STELLAR_data, EOS_data, IOTA_data, HYPERLEDGER_data, POSTGRES_data]
 	# Create a figure instance
+	plt.rcParams.update({'font.size': 13})
 	fig = plt.figure(1, figsize=(9, 6))
 	# Create an axes instance
 	ax = fig.add_subplot(111)
@@ -79,20 +80,21 @@ def save_to_plot():
 	median_labels = [str(np.around(s).astype(int)) for s in medians]
 	pos = range(len(medians))
 	for tick, label in zip(pos, ax.get_xticklabels()):
-		ax.text(pos[tick]+1.3, medians[tick]-0.1, f"{median_labels[tick]} ms", va='bottom', horizontalalignment='left', verticalalignment='center', size='medium', color='black', weight='semibold')
+		ax.text(pos[tick]+1.3, medians[tick]-0.1, f"{median_labels[tick]} ms", va='bottom', horizontalalignment='left', verticalalignment='center', fontsize=15, color='black', weight='semibold')
 	# Set labels etc.
-	ax.set_xticklabels(['BITCOIN', 'ETHEREUM', 'MULTICHAIN', 'STELLAR', 'EOS', 'IOTA', 'HYPERLEDGER', 'POSTGRES'])
-	ax.set_ylabel('Average time per transaction using 1000 samples (in seconds)')
+	ax.set_xticklabels(['BITCOIN', 'ETHEREUM', 'MULTICHAIN', 'STELLAR', 'EOS', 'IOTA', 'HYPERLEDGER', 'POSTGRES'],fontsize=10)
+	ax.set_ylabel('Average time per transaction using 1000 samples (in ms)',fontsize=13)
 	ax.set_yscale('log')
-	ax.set_xlabel('Blockchain')
-	ax.set_title('Performance Comparison')
+	ax.set_xlabel('Blockchain',fontsize=15)
+	#ax.set_title('Performance Comparison',fontsize=14)
 	# Expand x axis a bit to the right, so there is space to label data
 	ax.set_xlim(right=8.7)
 	ax.yaxis.grid(True)
 	
 	# Save the figure and show
 	plt.tight_layout()
-	plt.style.use('seaborn-whitegrid')
+#	plt.style.use('seaborn-whitegrid')
+	plt.style.use('grayscale')
 	ax.grid(True)
 	plt.savefig('performance_test/performance.pdf', format='pdf')
 

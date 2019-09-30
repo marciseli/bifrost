@@ -1,4 +1,10 @@
-# Blockchain Interoperability
+# Bifröst: a Modular Blockchain Interoperability API
+
+<p align="center">
+<img src="img/bifrost-logo.png" width="300x"></img>
+</p>
+
+The blockchain (BC) world is rapidly becoming a universe of several ledgers designed for a specific purpose, holding data previously stored (i.e., siloed) in centralized databases. The use of different BCs for the same purpose could hamper the frictionless exchange of data or value. On one hand, it is natural that there are competing implementations exploring the benefits of BC. On the other hand, the problem of siloed data re-emerges, with respect to isolated chains. In this regard, BC interoperability is necessary to connect different BCs, exchanging information and assets. Moreover, to foster BC employment, developers must be able to interact with such different BCs without knowing the details of each implementation. This paper presents a novel solution, called Bifröst, to store and retrieve data on different BCs. Bifröst employs a notary scheme, which allows for connectivity to different BCs. The presented prototype is highly modular and currently implements seven adapters to popular BC implementations, including Bitcoin, Ethereum, and Stellar. The developed prototype was evaluated concerning performance, security, and data size to verify the feasibility of such an implementation and assess design decisions taken during its development.
 
 ## Usage
 
