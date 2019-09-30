@@ -115,7 +115,7 @@ $ geth attach http://127.0.0.1:8545
 In interactive mode, add the private key to the node's keyichain, encrypted with a passphrase (to be able to receive mining rewards):
 
 ```
-> personal.importRawKey("d54db06062615cf2fb8133b96aa8c2becf7524c7ea7bf7f0387ee9b903b6b662", "")
+> personal.importRawKey("d54db06062615cf2fb8133b96aa8c224c7ea7bf7f0387ee9b903b6b662", "")
 
 "0xdeb92221fed1dfe74ea63c00aede6b31f02d6abe"
 ```
@@ -200,7 +200,7 @@ In interactive mode, generate public/private key pairs that are not stored in th
     {
         "address" : "1LKfR5yQVKx3YJ27enyKDNske7XFHzkN6bm43Y",
         "pubkey" : "0323187cd83c9dde13f223b5df1fb2899e645e8b0cd1fa73ae61c41b07ce9cd7a6",
-        "privkey" : "VHrFLuvdBeb1oVTmKD48Sdm1ovoc8mS5pbrk2gpKhCUWh72LavvAF8jx"
+        "privkey" : "VHrFLuvdBeb1oVTmKD48Sdm1ovoc8gpKhCUWh72LavvAF8jx"
     }
 ]
 ```

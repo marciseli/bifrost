@@ -14,7 +14,7 @@ class BTCAdapter(Adapter):
     key = credentials['key']
     rpcuser = credentials['user']
     rpcpassword = credentials['password']
-    endpoint_uri = f"http://{rpcuser}:{rpcpassword}@130.60.156.148:18332/"
+    endpoint_uri = f"http://{rpcuser}:{rpcpassword}@localhost:18332/"
     client = AuthServiceProxy(endpoint_uri)
 
     # ---Store---
