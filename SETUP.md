@@ -1,7 +1,7 @@
 # Setup
 
 ## General Remarks
-There are credentials provided in the database which can be used for testing. Additionally, there is code to help you create an account in the `account_creation` folder.
+There are credentials provided in the database which can be used for testing, meaning that there is no real value attached to the cryptocurrencies. Additionally, there is code to help you create an account in the `account_creation` folder.
 
 ## Bitcoin
 
