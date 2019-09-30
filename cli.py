@@ -1,4 +1,6 @@
+# Testing script
 # append the root project path to the pythonpath so that blockchain.py can be accessed by every adapter
+
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
