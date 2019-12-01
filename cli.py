@@ -82,18 +82,6 @@ def caseStore():
 					'name': 'Postgres',
 					'value': Blockchain.POSTGRES,
 				},
-				{
-					'name': 'Monero',
-					'value': Blockchain.MONERO,
-				},
-				{
-					'name': 'Litecoin',
-					'value': Blockchain.LITECOIN,
-				},				
-				{
-					'name': 'Ripple',
-					'value': Blockchain.RIPPLE,
-				},
 			],
 		},
 		{
@@ -161,18 +149,6 @@ def caseMigrate():
 				{
 					'name': 'Postgres',
 					'value': Blockchain.POSTGRES,
-				},
-				{
-					'name': 'Monero',
-					'value': Blockchain.MONERO,
-				},
-				{
-					'name': 'Litecoin',
-					'value': Blockchain.LITECOIN,
-				},
-				{
-					'name': 'Ripple',
-					'value': Blockchain.RIPPLE,
 				},
 			],
 		},
