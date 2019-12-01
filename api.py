@@ -11,6 +11,9 @@ from adapters.stellar_adapter import StellarAdapter
 from adapters.eos_adapter import EosAdapter
 from adapters.iota_adapter import IotaAdapter
 #from adapters.hyperledger_adapter import HyperledgerAdapter
+from adapters.monero_adapter import MoneroAdapter
+from adapters.ltc_adapter import LTCAdapter
+from adapters.ripple_adapter import RippleAdapter
 
 from blockchain import Blockchain
 import db.database as database
@@ -30,6 +33,9 @@ Adapter = {
     Blockchain.IOTA: IotaAdapter,
     #Blockchain.HYPERLEDGER: HyperledgerAdapter
 
+    Blockchain.MONERO: MoneroAdapter,
+    Blockchain.LITECOIN: LTCAdapter,
+    Blockchain.RIPPLE: RippleAdapter
 }
 
 

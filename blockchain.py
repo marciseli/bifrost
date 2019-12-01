@@ -9,3 +9,6 @@ class Blockchain(Enum):
     HYPERLEDGER = auto()
     EOS = auto()
     IOTA = auto()
+    MONERO = auto()
+    LITECOIN = auto()
+    RIPPLE = auto()
