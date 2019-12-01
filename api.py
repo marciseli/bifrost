@@ -33,6 +33,9 @@ Adapter = {
     Blockchain.IOTA: IotaAdapter,
     #Blockchain.HYPERLEDGER: HyperledgerAdapter
 
+    Blockchain.MONERO: MoneroAdapter,
+    Blockchain.LITECOIN: LTCAdapter,
+    Blockchain.RIPPLE: RippleAdapter
 }
 
 
