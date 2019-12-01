@@ -97,7 +97,7 @@ pytz==2018.5
 PyYAML==3.13
 pyzmq==17.1.2
 regex==2018.8.29
-requests==2.19.1
+requests==2.20.0
 rlp==1.0.3
 #sawtooth-sdk==1.0.5
 #sawtooth-signing==1.0.5
