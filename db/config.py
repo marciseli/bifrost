@@ -15,6 +15,9 @@ CONFIRMATION_WAITING_TIMES = {
     Blockchain.HYPERLEDGER.value: max(20, 20),
     Blockchain.EOS.value: max(0.5, 20),
     Blockchain.IOTA.value: max(60, 20),
+    Blockchain.MONERO.value: max(1200, 20),
+    Blockchain.LITECOIN.value: max(1800, 20),
+    Blockchain.RIPPLE.value: max(5, 20),
 }
 
 CREDENTIALS = [
@@ -83,6 +86,30 @@ CREDENTIALS = [
         "key": 'iota (not used)',
         "user": 'iota (not used)',
         "password": 'iota (not used)',
+    },
+    {
+        "blockchain": Blockchain.MONERO,
+        "id": Blockchain.MONERO.value,
+        "address": '',
+        "key": '',
+        "user": 'monero (not used)',
+        "password": 'monero (not used)',
+    },
+    {
+        "blockchain": Blockchain.LITECOIN,
+        "id": Blockchain.LITECOIN.value,
+        "address": '',
+        "key": '',
+        "user": '',
+        "password": 'ltc (not used)'
+    },
+    {
+        "blockchain": Blockchain.RIPPLE,
+        "id": Blockchain.RIPPLE.value,
+        "address": '',
+        "key": '',
+        "user": 'ripple (not used)',
+        "password": 'ripple (not used)'
     }
 ]
 TRANSACTIONS = [
