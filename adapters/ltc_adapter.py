@@ -8,7 +8,7 @@ import collections
 
 
 class LTCAdapter(Adapter):
-    chain = Blockchain.BITCOIN
+    chain = Blockchain.LITECOIN
     credentials = database.find_credentials(Blockchain.LITECOIN)
     address = credentials['address']
     key = credentials['key']
@@ -66,7 +66,7 @@ class LTCAdapter(Adapter):
 
     @staticmethod
     def add_transaction_to_database(transaction_hash):
-        database.add_transaction(transaction_hash, Blockchain.BITCOIN)
+        database.add_transaction(transaction_hash, Blockchain.LITECOIN)
 
 
     # ---Receive---
